@@ -717,7 +717,7 @@ namespace VSCodeEditor
             builder.Append(@"  </PropertyGroup>").Append(k_WindowsNewline);
             builder.Append(analyzerBlock);
             builder.Append(@"  <ItemGroup>").Append(k_WindowsNewline);
-            builder.Append(@"     <Compile Include=""Assets\Scripts\**\*.cs"" />").Append(k_WindowsNewline);
+            // builder.Append(@"     <Compile Include=""Assets\Scripts\**\*.cs"" />").Append(k_WindowsNewline); pb car include plusieurs fois le meme prgm
         }
 
         void SyncSolution(IEnumerable<Assembly> assemblies)
